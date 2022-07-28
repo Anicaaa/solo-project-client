@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const HomePage = () => {
   const [data, setData] = useState(PeopleList);
+  const [search, setSearch] = useState("");
 
   const filterResult = (people) => {
     const result = PeopleList.filter((p) => {
@@ -12,12 +13,28 @@ const HomePage = () => {
     setData(result);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const filter = PeopleList.filter((val) =>
+      val.city.toLowerCase().includes(search)
+    );
+    setData(filter);
+  };
+
   return (
     <>
       <main className="container">
         <div className="row">
           <div className="col">
             <h1 className="title">Where Next?</h1>
+            <form className="search-form" onSubmit={handleSubmit}>
+              <input
+                className="search-bar"
+                type="text"
+                placeholder="Search"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </form>
           </div>
         </div>
         <div className="row">
