@@ -35,6 +35,12 @@
   flex-direction: column;
 }
 
+.language-li {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
 .btn {
   margin-bottom: 5px;
   background-color: transparent;

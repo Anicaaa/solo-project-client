@@ -2,6 +2,7 @@ const PeopleList = [
   {
     id: 1,
     city: "Oxford",
+    lang: "Arabic",
     name: "Amir",
     position: "Full-Stack Developer at Mongo",
     image: "/images/3.jpg",
@@ -16,6 +17,7 @@ const PeopleList = [
   {
     id: 3,
     city: "Edinburgh",
+    lang: "Arabic",
     name: "Mo",
     position: "NHS Nurse",
     image: "/images/3.jpg",
@@ -23,6 +25,7 @@ const PeopleList = [
   {
     id: 4,
     city: "Edinburgh",
+    lang: "English",
     name: "Oseye",
     position: "Research assistant at the University of Edinburgh",
     image: "/images/2.jpg",
@@ -30,6 +33,7 @@ const PeopleList = [
   {
     id: 5,
     city: "Edinburgh",
+    lang: "English",
     name: "Nanyamka",
     position: "Full-time Mum",
     image: "/images/1.jpg",
@@ -37,6 +41,7 @@ const PeopleList = [
   {
     id: 6,
     city: "Glasgow",
+    lang: "English",
     name: "Olivia",
     position: "NHS Doctor",
     image: "/images/2.jpg",
@@ -44,6 +49,7 @@ const PeopleList = [
   {
     id: 7,
     city: "Glasgow",
+    lang: "Spanish",
     name: "Elena",
     position: "Writer at Lonely Planet",
     image: "/images/1.jpg",
@@ -51,6 +57,7 @@ const PeopleList = [
   {
     id: 8,
     city: "London",
+    lang: "English",
     name: "John",
     position: "Student at UCL",
     image: "/images/3.jpg",
@@ -58,6 +65,7 @@ const PeopleList = [
   {
     id: 9,
     city: "London",
+    lang: "Spanish",
     name: "Katia",
     position: "Cardiothoracic Surgery at St Thomas' Hospital",
     image: "/images/2.jpg",
@@ -65,6 +73,7 @@ const PeopleList = [
   {
     id: 10,
     city: "London",
+    lang: "English",
     name: "Thomas",
     position: "Waiter at Falafel Land",
     image: "/images/3.jpg",
@@ -72,6 +81,7 @@ const PeopleList = [
   {
     id: 11,
     city: "London",
+    lang: "Arabic",
     name: "Dunya",
     position: "NHS Nurse",
     image: "/images/2.jpg",
@@ -79,6 +89,7 @@ const PeopleList = [
   {
     id: 12,
     city: "Nottingham",
+    lang: "Hindi",
     name: "Anisa",
     position: "Student Nurse at The University of Nottingham",
     image: "/images/1.jpg",
@@ -86,6 +97,7 @@ const PeopleList = [
   {
     id: 13,
     city: "Nottingham",
+    lang: "English",
     name: "Gary",
     position: "Dog walker",
     image: "/images/3.jpg",
@@ -93,6 +105,7 @@ const PeopleList = [
   {
     id: 14,
     city: "Manchester",
+    lang: "English",
     name: "Mike",
     position: "College student",
     image: "/images/3.jpg",
@@ -100,6 +113,7 @@ const PeopleList = [
   {
     id: 15,
     city: "Manchester",
+    lang: "Hindi",
     name: "Sarah",
     position: "Travel agent",
     image: "/images/2.jpg",
@@ -107,6 +121,7 @@ const PeopleList = [
   {
     id: 16,
     city: "Oxford",
+    lang: "English",
     name: "Alex",
     position: "Professor Assistant at Oxford Brookers University",
     image: "/images/3.jpg",
@@ -114,6 +129,7 @@ const PeopleList = [
   {
     id: 17,
     city: "Manchester",
+    lang: "English",
     name: "Peter",
     position: "Secondary school teacher",
     image: "/images/3.jpg",
@@ -121,6 +137,7 @@ const PeopleList = [
   {
     id: 18,
     city: "Cambridge",
+    lang: "English",
     name: "Asia",
     position: "Medical student at the University of Cambridge",
     image: "/images/1.jpg",
@@ -128,6 +145,7 @@ const PeopleList = [
   {
     id: 19,
     city: "Cambridge",
+    lang: "English",
     name: "David",
     position: "Student at Boolean UK",
     image: "/images/3.jpg",
@@ -135,6 +153,7 @@ const PeopleList = [
   {
     id: 20,
     city: "Oxford",
+    lang: "Chinese",
     name: "Joe",
     position: "A-level student at the City of Oxford College.",
     image: "/images/3.jpg",

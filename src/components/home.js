@@ -6,9 +6,16 @@ const HomePage = () => {
   const [data, setData] = useState(PeopleList);
   const [search, setSearch] = useState("");
 
-  const filterResult = (people) => {
+  const filterResultCity = (people) => {
     const result = PeopleList.filter((p) => {
       return p.city === people;
+    });
+    setData(result);
+  };
+
+  const filterResultLanguage = (people) => {
+    const result = PeopleList.filter((p) => {
+      return p.lang === people;
     });
     setData(result);
   };
@@ -24,7 +31,7 @@ const HomePage = () => {
   return (
     <>
       <main className="container">
-        <div className="row">
+        <section className="row">
           <div className="col">
             <h1 className="title">Where Next?</h1>
             <form className="search-form" onSubmit={handleSubmit}>
@@ -36,33 +43,80 @@ const HomePage = () => {
               />
             </form>
           </div>
-        </div>
+        </section>
         <div className="row">
           <div className="col">
             <button className="btn" onClick={() => setData(PeopleList)}>
               <strong>All</strong>
             </button>
-            <button className="btn" onClick={() => filterResult("Brighton")}>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Brighton")}
+            >
               Brighton
             </button>
-            <button className="btn" onClick={() => filterResult("Cambridge")}>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Cambridge")}
+            >
               Cambridge
             </button>
-            <button className="btn" onClick={() => filterResult("Edinburgh")}>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Edinburgh")}
+            >
               Edinburgh
             </button>
-            <button className="btn" onClick={() => filterResult("Glasgow")}>
+            <button className="btn" onClick={() => filterResultCity("Glasgow")}>
               Glasgow
             </button>
-            <button className="btn" onClick={() => filterResult("London")}>
+            <button className="btn" onClick={() => filterResultCity("London")}>
               London
             </button>
-            <button className="btn" onClick={() => filterResult("Nottingham")}>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Nottingham")}
+            >
               Nottingham
             </button>
-            <button className="btn" onClick={() => filterResult("Oxford")}>
+            <button className="btn" onClick={() => filterResultCity("Oxford")}>
               Oxford
             </button>
+            <div className="language-li">
+              <button className="btn" onClick={() => setData(PeopleList)}>
+                <strong>Languages</strong>
+              </button>
+              <button
+                className="btn"
+                onClick={() => filterResultLanguage("Arabic")}
+              >
+                Arabic
+              </button>
+              <button
+                className="btn"
+                onClick={() => filterResultLanguage("Chinese")}
+              >
+                Chinese
+              </button>
+              <button
+                className="btn"
+                onClick={() => filterResultLanguage("English")}
+              >
+                English
+              </button>
+              <button
+                className="btn"
+                onClick={() => filterResultLanguage("Hindi")}
+              >
+                Hindi
+              </button>
+              <button
+                className="btn"
+                onClick={() => filterResultLanguage("Spanish")}
+              >
+                Spanish
+              </button>
+            </div>
           </div>
           <div className="col">
             <div className="cards">
