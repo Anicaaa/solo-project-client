@@ -1,6 +1,27 @@
 import React from "react";
+// import { useState } from "react";
 
 const RegisterPage = () => {
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [confirmPassword, setConfirmPassword] = useState("");
+
+  /* You need a useEffect to get the http POST request */
+
+  // const handleRegister = async (e) => {
+  //   e.preventDefault();
+  //   const opts = {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({ name, email, password, confirmPassword }),
+  //   };
+  //   console.log(opts);
+  //   await fetch(`${apiUrl}/register`, opts)
+  //     .then((res) => res.json())
+  //     .then((createdUser) => console.log("USER CREATED", createdUser));
+  // };
+
   return (
     <div>
       <form className="account-form">

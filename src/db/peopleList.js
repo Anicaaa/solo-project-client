@@ -5,6 +5,7 @@ const PeopleList = [
     lang: "Arabic",
     name: "Amir",
     position: "Full-Stack Developer at Mongo",
+    reason: "Work",
     image: "/images/3.jpg",
   },
   {
@@ -12,7 +13,8 @@ const PeopleList = [
     city: "Brighton",
     lang: "Spanish",
     name: "Anna",
-    position: "UX/UI Designer at Framework.",
+    position: "UX/UI Designer at Framework",
+    reason: "Work",
     image: "/images/2.jpg",
   },
   {
@@ -21,6 +23,7 @@ const PeopleList = [
     lang: "Arabic",
     name: "Mo",
     position: "NHS Nurse",
+    reason: "Work",
     image: "/images/3.jpg",
   },
   {
@@ -29,6 +32,7 @@ const PeopleList = [
     lang: "English",
     name: "Oseye",
     position: "Research assistant at the University of Edinburgh",
+    reason: "Work",
     image: "/images/2.jpg",
   },
   {
@@ -37,6 +41,7 @@ const PeopleList = [
     lang: "English",
     name: "Nanyamka",
     position: "Full-time Mum",
+    reason: "Personal",
     image: "/images/1.jpg",
   },
   {
@@ -45,6 +50,7 @@ const PeopleList = [
     lang: "English",
     name: "Olivia",
     position: "NHS Doctor",
+    reason: "Work",
     image: "/images/2.jpg",
   },
   {
@@ -53,6 +59,7 @@ const PeopleList = [
     lang: "Spanish",
     name: "Elena",
     position: "Writer at Lonely Planet",
+    reason: "Work",
     image: "/images/1.jpg",
   },
   {
@@ -61,6 +68,7 @@ const PeopleList = [
     lang: "English",
     name: "John",
     position: "Student at UCL",
+    reason: "Study",
     image: "/images/3.jpg",
   },
   {
@@ -68,7 +76,8 @@ const PeopleList = [
     city: "London",
     lang: "Spanish",
     name: "Katia",
-    position: "Cardiothoracic Surgery at St Thomas' Hospital",
+    position: "Cardiothoracic Surgeon at St Thomas' Hospital",
+    reason: "Work",
     image: "/images/2.jpg",
   },
   {
@@ -77,6 +86,7 @@ const PeopleList = [
     lang: "English",
     name: "Thomas",
     position: "Waiter at Falafel Land",
+    reason: "Work",
     image: "/images/3.jpg",
   },
   {
@@ -85,6 +95,7 @@ const PeopleList = [
     lang: "Arabic",
     name: "Dunya",
     position: "NHS Nurse",
+    reason: "Work",
     image: "/images/2.jpg",
   },
   {
@@ -93,6 +104,7 @@ const PeopleList = [
     lang: "Hindi",
     name: "Anisa",
     position: "Student Nurse at The University of Nottingham",
+    reason: "Study",
     image: "/images/1.jpg",
   },
   {
@@ -101,6 +113,7 @@ const PeopleList = [
     lang: "English",
     name: "Gary",
     position: "Dog walker",
+    reason: "Work",
     image: "/images/3.jpg",
   },
   {
@@ -109,6 +122,7 @@ const PeopleList = [
     lang: "English",
     name: "Mike",
     position: "College student",
+    reason: "Study",
     image: "/images/3.jpg",
   },
   {
@@ -117,6 +131,7 @@ const PeopleList = [
     lang: "Hindi",
     name: "Sarah",
     position: "Travel agent",
+    reason: "Work",
     image: "/images/2.jpg",
   },
   {
@@ -125,6 +140,7 @@ const PeopleList = [
     lang: "English",
     name: "Alex",
     position: "Professor Assistant at Oxford Brookers University",
+    reason: "Work",
     image: "/images/3.jpg",
   },
   {
@@ -133,6 +149,7 @@ const PeopleList = [
     lang: "English",
     name: "Peter",
     position: "Secondary school teacher",
+    reason: "Work",
     image: "/images/3.jpg",
   },
   {
@@ -141,6 +158,7 @@ const PeopleList = [
     lang: "English",
     name: "Asia",
     position: "Medical student at the University of Cambridge",
+    reason: "Study",
     image: "/images/1.jpg",
   },
   {
@@ -149,14 +167,16 @@ const PeopleList = [
     lang: "English",
     name: "David",
     position: "Student at Boolean UK",
+    reason: "Study",
     image: "/images/3.jpg",
   },
   {
     id: 20,
     city: "Oxford",
-    lang: "Chinese",
+    lang: "Mandarin",
     name: "Joe",
-    position: "A-level student at the City of Oxford College.",
+    position: "A-level student at the City of Oxford College",
+    reason: "Study",
     image: "/images/3.jpg",
   },
 ];

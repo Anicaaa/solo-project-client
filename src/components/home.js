@@ -20,6 +20,13 @@ const HomePage = () => {
     setData(result);
   };
 
+  const filterResultReason = (people) => {
+    const result = PeopleList.filter((p) => {
+      return p.reason === people;
+    });
+    setData(result);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const filter = PeopleList.filter((val) =>
@@ -94,9 +101,9 @@ const HomePage = () => {
               </button>
               <button
                 className="btn"
-                onClick={() => filterResultLanguage("Chinese")}
+                onClick={() => filterResultLanguage("Mandarin")}
               >
-                Chinese
+                Mandarin
               </button>
               <button
                 className="btn"
@@ -116,6 +123,29 @@ const HomePage = () => {
               >
                 Spanish
               </button>
+              <div className="language-li">
+                <button className="btn" onClick={() => setData(PeopleList)}>
+                  <strong>Reason</strong>
+                </button>
+                <button
+                  className="btn"
+                  onClick={() => filterResultReason("Work")}
+                >
+                  Work
+                </button>
+                <button
+                  className="btn"
+                  onClick={() => filterResultReason("Study")}
+                >
+                  Study
+                </button>
+                <button
+                  className="btn"
+                  onClick={() => filterResultReason("Personal")}
+                >
+                  Personal
+                </button>
+              </div>
             </div>
           </div>
           <div className="col">
