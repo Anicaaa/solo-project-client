@@ -47,7 +47,7 @@ const HomePage = () => {
         <div className="row">
           <div className="col">
             <button className="btn" onClick={() => setData(PeopleList)}>
-              <strong>All</strong>
+              <strong>City</strong>
             </button>
             <button
               className="btn"
@@ -84,7 +84,7 @@ const HomePage = () => {
             </button>
             <div className="language-li">
               <button className="btn" onClick={() => setData(PeopleList)}>
-                <strong>Languages</strong>
+                <strong>Language</strong>
               </button>
               <button
                 className="btn"

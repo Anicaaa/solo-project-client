@@ -10,6 +10,7 @@ const PeopleList = [
   {
     id: 2,
     city: "Brighton",
+    lang: "Spanish",
     name: "Anna",
     position: "UX/UI Designer at Framework.",
     image: "/images/2.jpg",

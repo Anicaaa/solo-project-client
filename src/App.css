@@ -84,3 +84,31 @@
     text-align: left;
     margin: 5px 10px;
 }
+
+/* Register and Login Form Styling */
+.account-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: ridge;
+    padding: 80px;
+}
+
+.account-button {
+  margin: 0 auto;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.input-space {
+  margin-bottom: 20px;
+}
+
+.input-size {
+  padding: 15px;
+  font-size: medium;
+}
