@@ -97,3 +97,32 @@
 .main-btn:hover, .reset-btn:hover {
   opacity: 0.9;
 }
+
+/* Register and Login Form Styling */
+.account-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: ridge;
+  padding: 80px;
+}
+
+.account-button {
+  margin: 0 auto;
+  display: block;
+}
+
+.center {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.input-space {
+  margin-bottom: 20px;
+}
+
+.input-size {
+  padding: 15px;
+  font-size: medium;
+}

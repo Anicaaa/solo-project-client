@@ -1,30 +1,55 @@
 import React from "react";
-// import { useState } from "react";
+import { useState } from "react";
+
+const apiUrl = "http://localhost:4000";
+
+const initialUser = {
+  name: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+};
 
 const RegisterPage = () => {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
+  const [userData, setUserData] = useState(initialUser);
 
-  /* You need a useEffect to get the http POST request */
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const opts = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: userData.name,
+        email: userData.email,
+        password: userData.password,
+      }),
+    };
+    console.log(opts);
+    await fetch(`${apiUrl}/user/register`, opts)
+      .then((res) => res.json())
+      .then((createdUser) => console.log("USER CREATED", createdUser));
+  };
 
-  // const handleRegister = async (e) => {
-  //   e.preventDefault();
-  //   const opts = {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({ name, email, password, confirmPassword }),
-  //   };
-  //   console.log(opts);
-  //   await fetch(`${apiUrl}/register`, opts)
-  //     .then((res) => res.json())
-  //     .then((createdUser) => console.log("USER CREATED", createdUser));
-  // };
+  function handleChange(event) {
+    const { name, type, value, checked } = event.target;
+
+    if (name === "name" && type === "text") {
+      setUserData({ ...userData, name: value });
+    }
+    if (name === "email" && type === "email") {
+      setUserData({ ...userData, email: value });
+    }
+    if (name === "password" && type === "password") {
+      setUserData({ ...userData, password: value });
+    }
+    if (name === "confirmPassword" && type === "password") {
+      setUserData({ ...userData, confirmPassword: value });
+    }
+  }
 
   return (
     <div>
-      <form className="account-form">
+      <form className="account-form" onSubmit={handleSubmit}>
         <h1 className="center">Register</h1>
         <div className="input-space">
           <input
@@ -34,6 +59,8 @@ const RegisterPage = () => {
             name="name"
             placeholder="Name"
             required
+            onChange={handleChange}
+            value={userData.name}
           ></input>
         </div>
         <div className="input-space">
@@ -44,6 +71,8 @@ const RegisterPage = () => {
             name="email"
             placeholder="Email"
             required
+            onChange={handleChange}
+            value={userData.email}
           ></input>
         </div>
         <div className="input-space">
@@ -54,6 +83,8 @@ const RegisterPage = () => {
             name="password"
             placeholder="Password"
             required
+            onChange={handleChange}
+            value={userData.password}
           ></input>
         </div>
         <div className="input-space">
@@ -64,6 +95,8 @@ const RegisterPage = () => {
             name="confirmPassword"
             placeholder="Confirm Password"
             required
+            onChange={handleChange}
+            value={userData.confirmPassword}
           ></input>
         </div>
         <div className="input-space">
