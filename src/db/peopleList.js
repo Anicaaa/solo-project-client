@@ -19,11 +19,11 @@ const PeopleList = [
   },
   {
     id: 3,
-    city: "Edinburgh",
-    lang: "Arabic",
-    name: "Mo",
-    position: "NHS Nurse",
-    reason: "Work",
+    city: "Oxford",
+    lang: "Mandarin",
+    name: "Joe",
+    position: "A-level student at the City of Oxford College",
+    reason: "Study",
     image: "/images/3.jpg",
   },
   {
@@ -172,11 +172,11 @@ const PeopleList = [
   },
   {
     id: 20,
-    city: "Oxford",
-    lang: "Mandarin",
-    name: "Joe",
-    position: "A-level student at the City of Oxford College",
-    reason: "Study",
+    city: "Edinburgh",
+    lang: "Arabic",
+    name: "Mo",
+    position: "NHS Nurse",
+    reason: "Work",
     image: "/images/3.jpg",
   },
 ];

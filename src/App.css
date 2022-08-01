@@ -1,12 +1,20 @@
-.row:first-child {
-  margin-bottom: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: #568203;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .title {
   text-align: left;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  padding-left: 20px;
 }
 
 .search-form {
@@ -17,51 +25,45 @@
 
 .search-bar {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   font-size: large;
 }
 
-.row:nth-child(2) {
+.main-page {
+  padding: 50px;
   display: flex;
 }
 
-.row:nth-child(2) .col {
-  padding: 0 15px;
-}
-
-.row:nth-child(2) .col:first-child {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.language-li {
+.filter-city, .filter-lang, .filter-reason {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.btn {
-  margin-bottom: 5px;
-  background-color: transparent;
+.center-wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 10px 30px;
+  background-color: #568203;
   border: none;
-  outline: none;
-  width: max-content;
-  cursor: pointer;
-  font-size: 20px;
+  color: #fff;
+  font-size: medium;
 }
 
-.btn:hover {
-  font-weight: bold;
-}
-
-.row:nth-child(2) .col:last-child {
-  flex: 4;
+.input-checkbox {
+  margin-right: 10px;
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
@@ -72,43 +74,26 @@
   margin: 0px 25px 25px 0;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-header img {
   width: 100%;
 }
 
-.titleProduct {
-  text-align: center;
+.main-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #568203;
+  padding: 7px;
+  border-radius: 10px 30px;
+  border: 1px, solid, #568203;
+  margin-top: 20px;
 }
 
-.position {
-    text-align: left;
-    margin: 5px 10px;
-}
-
-/* Register and Login Form Styling */
-.account-form {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-style: ridge;
-    padding: 80px;
-}
-
-.account-button {
-  margin: 0 auto;
-  display: block;
-}
-
-.center {
-  text-align: center;
-}
-
-.input-space {
-  margin-bottom: 20px;
-}
-
-.input-size {
-  padding: 15px;
-  font-size: medium;
+.main-btn:hover, .reset-btn:hover {
+  opacity: 0.9;
 }
