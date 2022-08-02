@@ -1,10 +1,21 @@
 import React from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Country = () => {
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/");
+    }
+  });
+
   return (
     <>
       <div className="country-wrapper">
-        <h1 className="country-title">Choose Country</h1>
+        <h1 className="country-title">Choose a Country</h1>
         <div className="country-list">
           <ul>
             <h2 className="country-name">Africa</h2>

@@ -46,7 +46,6 @@
   min-height: 100vh;
   padding: 50px;
   display: flex;
-  background-color: #eae7dc;
 }
 
 .filter-city, .filter-lang, .filter-reason {
@@ -103,6 +102,7 @@ h3 {
 .card {
   background-color: white;
   width: 250px;
+  height: 400px;
   box-shadow: 0 0 5px #000000;
   border-radius: 5px;
   padding: 5px;
@@ -135,12 +135,14 @@ h3 {
 
 /* Register and Login Form Styling */
 .account-form {
+  background-color: #eae7dc;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-style: ridge;
   padding: 80px;
+  
 }
 
 .account-button {
@@ -165,6 +167,7 @@ h3 {
 }
 
 .input-size {
+  border: 1px solid #eae7dc;
   padding: 15px;
   font-size: medium;
 }
