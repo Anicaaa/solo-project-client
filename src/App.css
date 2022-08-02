@@ -79,6 +79,13 @@ h3 {
   margin-right: auto;
 }
 
+.react-spinner {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .reset-btn {
   margin-top: 20px;
   padding: 8px;

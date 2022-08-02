@@ -2,11 +2,20 @@ import React from "react";
 import PeopleList from "../db/peopleList";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import SyncLoader from "react-spinners/SyncLoader";
 
 const HomePage = () => {
   const [data, setData] = useState(PeopleList);
   const [search, setSearch] = useState("");
   let navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -154,29 +163,33 @@ const HomePage = () => {
             Reset
           </button>
         </div>
-        <div className="center-wrapper">
-          <div className="cards">
-            {data.map((values) => {
-              const { id, name, position, image } = values;
-              return (
-                <div className="card" key={id}>
-                  <div className="card-header">
-                    <img src={image} alt={name} />
+        <div className="center-wrapper react-spinner">
+          {loading ? (
+            <SyncLoader color={"#2d3065"} loading={loading} size={30} />
+          ) : (
+            <div className="cards">
+              {data.map((values) => {
+                const { id, name, position, image } = values;
+                return (
+                  <div className="card" key={id}>
+                    <div className="card-header">
+                      <img src={image} alt={name} />
+                    </div>
+                    <div className="card-body">
+                      <h2 className="titleProduct">{name}</h2>
+                      <p className="position">
+                        <strong>Position: </strong>
+                        {position}
+                      </p>
+                      <a href="/profile" className="main-btn">
+                        View Profile
+                      </a>
+                    </div>
                   </div>
-                  <div className="card-body">
-                    <h2 className="titleProduct">{name}</h2>
-                    <p className="position">
-                      <strong>Position: </strong>
-                      {position}
-                    </p>
-                    <a href="/profile" className="main-btn">
-                      View Profile
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </section>
     </>
