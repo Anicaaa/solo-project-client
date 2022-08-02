@@ -31,7 +31,7 @@ const RegisterPage = () => {
   };
 
   function handleChange(event) {
-    const { name, type, value, checked } = event.target;
+    const { name, type, value } = event.target;
 
     if (name === "name" && type === "text") {
       setUserData({ ...userData, name: value });

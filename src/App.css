@@ -5,7 +5,7 @@
 }
 
 .top-bar {
-  background-color: #568203;
+  background-color: #eae7dc;
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -13,8 +13,7 @@
 }
 
 .title {
-  text-align: left;
-  text-transform: uppercase;
+  color: #2d3065;
 }
 
 .search-form {
@@ -27,11 +26,27 @@
   width: 100%;
   padding: 10px;
   font-size: large;
+  border-radius: 10px 30px;
+  border: 1px solid #eae7dc;
+  text-align: center;
+}
+
+.logout-btn {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 10px 30px;
+  background-color: #2d3065;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
 }
 
 .main-page {
+  min-height: 100vh;
   padding: 50px;
   display: flex;
+  background-color: #eae7dc;
 }
 
 .filter-city, .filter-lang, .filter-reason {
@@ -39,6 +54,24 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+h3 {
+ margin-bottom: 15px;
+}
+
+.btn {
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: max-content;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  font-weight: bold;
 }
 
 .center-wrapper {
@@ -49,12 +82,13 @@
 
 .reset-btn {
   margin-top: 20px;
-  padding: 7px;
+  padding: 8px;
   border-radius: 10px 30px;
-  background-color: #568203;
+  background-color: #2d3065;
   border: none;
-  color: #fff;
-  font-size: medium;
+  color: white;;
+  font-weight: bold;
+  font-size: large;
 }
 
 .input-checkbox {
@@ -62,11 +96,12 @@
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
+  background-color: white;
   width: 250px;
   box-shadow: 0 0 5px #000000;
   border-radius: 5px;
@@ -86,16 +121,16 @@
 
 .main-btn {
   text-decoration: none;
-  color: #fff;
-  background-color: #568203;
+  color: white;
+  background-color: #2d3065;
   padding: 7px;
   border-radius: 10px 30px;
-  border: 1px, solid, #568203;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .main-btn:hover, .reset-btn:hover {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 /* Register and Login Form Styling */
@@ -111,6 +146,13 @@
 .account-button {
   margin: 0 auto;
   display: block;
+  padding: 8px;
+  border-radius: 10px 30px;
+  background-color: #2d3065;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
 }
 
 .center {

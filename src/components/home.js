@@ -47,176 +47,100 @@ const HomePage = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
         </form>
-        <a href="/">Logout</a>
+        <a className="logout-btn" href="/">
+          Logout
+        </a>
       </section>
-
       <section className="main-page">
         <div className="filter-section">
           <div className="filter-city">
             <h3>City</h3>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Brighton"
-                value="Brighton"
-                onClick={() => filterResultCity("Brighton")}
-              ></input>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Brighton")}
+            >
               Brighton
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Cambridge"
-                value="Cambridge"
-                onClick={() => filterResultCity("Cambridge")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Cambridge")}
+            >
               Cambridge
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Edinburgh"
-                value="Edinburgh"
-                onClick={() => filterResultCity("Edinburgh")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Edinburgh")}
+            >
               Edinburgh
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Glasgow"
-                value="Glasgow"
-                onClick={() => filterResultCity("Glasgow")}
-              ></input>
+            </button>
+            <button className="btn" onClick={() => filterResultCity("Glasgow")}>
               Glasgow
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="London"
-                value="London"
-                onClick={() => filterResultCity("London")}
-              ></input>
+            </button>
+            <button className="btn" onClick={() => filterResultCity("London")}>
               London
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Nottingham"
-                value="Nottingham"
-                onClick={() => filterResultCity("Nottingham")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultCity("Nottingham")}
+            >
               Nottingham
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Oxford"
-                value="Oxford"
-                onClick={() => filterResultCity("Oxford")}
-              ></input>
+            </button>
+            <button className="btn" onClick={() => filterResultCity("Oxford")}>
               Oxford
-            </label>
+            </button>
           </div>
           <div className="filter-lang">
             <h3>Language</h3>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Arabic"
-                value="Arabic"
-                onClick={() => filterResultLanguage("Arabic")}
-              ></input>
+            <button
+              className="btn"
+              onClick={() => filterResultLanguage("Arabic")}
+            >
               Arabic
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Mandarin"
-                value="Mandarin"
-                onClick={() => filterResultLanguage("Mandarin")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultLanguage("Mandarin")}
+            >
               Mandarin
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="English"
-                value="English"
-                onClick={() => filterResultLanguage("English")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultLanguage("English")}
+            >
               English
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Hindi"
-                value="Hindi"
-                onClick={() => filterResultLanguage("Hindi")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultLanguage("Hindi")}
+            >
               Hindi
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Spanish"
-                value="Spanish"
-                onClick={() => filterResultLanguage("Spanish")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultLanguage("Spanish")}
+            >
               Spanish
-            </label>
+            </button>
           </div>
           <div className="filter-reason">
             <h3>Reason</h3>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Work"
-                value="Work"
-                onClick={() => filterResultReason("Work")}
-              ></input>
+            <button className="btn" onClick={() => filterResultReason("Work")}>
               Work
-            </label>
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Study"
-                value="Study"
-                onClick={() => filterResultReason("Study")}
-              ></input>
+            </button>
+            <button className="btn" onClick={() => filterResultReason("Study")}>
               Study
-            </label>
-
-            <label>
-              <input
-                className="input-checkbox"
-                type="checkbox"
-                name="Personal"
-                value="Personal"
-                onClick={() => filterResultReason("Personal")}
-              ></input>
+            </button>
+            <button
+              className="btn"
+              onClick={() => filterResultReason("Personal")}
+            >
               Personal
-            </label>
+            </button>
           </div>
           <button className="reset-btn" onClick={() => setData(PeopleList)}>
-            RESET
+            Reset
           </button>
         </div>
-
         <div className="center-wrapper">
           <div className="cards">
             {data.map((values) => {
@@ -233,7 +157,7 @@ const HomePage = () => {
                       {position}
                     </p>
                     <a href="/profile" className="main-btn">
-                      Read More
+                      View Profile
                     </a>
                   </div>
                 </div>
