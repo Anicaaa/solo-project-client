@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const apiUrl = "http://localhost:4000";
 
@@ -10,19 +11,22 @@ const initialUser = {
 
 const LoginPage = () => {
   const [userData, setUserData] = useState(initialUser);
+  let navigate = useNavigate();
 
-  const handleLogin = async ({ email, password }) => {
+  const handleLogin = async (e) => {
+    e.preventDefault();
     const opts = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify(userData),
     };
     console.log(opts);
     await fetch(`${apiUrl}/user/login`, opts)
       .then((res) => res.json())
       .then((token) => {
         localStorage.setItem("token", token.data);
-        console.log(`token for ${email} is ${token.data}`);
+        console.log(`token for ${userData.email} is ${token.data}`);
+        navigate("/country");
       });
   };
 

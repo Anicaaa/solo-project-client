@@ -1,10 +1,19 @@
 import React from "react";
 import PeopleList from "../db/peopleList";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [data, setData] = useState(PeopleList);
   const [search, setSearch] = useState("");
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/");
+    }
+  });
 
   const filterResultCity = (people) => {
     const result = PeopleList.filter((p) => {
@@ -35,6 +44,10 @@ const HomePage = () => {
     setData(filter);
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+  };
+
   return (
     <>
       <section className="top-bar">
@@ -47,7 +60,7 @@ const HomePage = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
         </form>
-        <a className="logout-btn" href="/">
+        <a className="logout-btn" href="/" onClick={handleLogout}>
           Logout
         </a>
       </section>
