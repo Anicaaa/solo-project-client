@@ -1,7 +1,7 @@
 const PeopleList = [
   {
     id: 1,
-    city: "Oxford",
+    city: "Nottingham",
     lang: "Arabic",
     name: "Amir",
     position: "Full-Stack Developer at Mongo",

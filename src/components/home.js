@@ -163,9 +163,14 @@ const HomePage = () => {
             Reset
           </button>
         </div>
-        <div className="center-wrapper react-spinner">
+        <div className="center-wrapper">
           {loading ? (
-            <SyncLoader color={"#2d3065"} loading={loading} size={30} />
+            <SyncLoader
+              className="react-spinner"
+              color={"#2d3065"}
+              loading={loading}
+              size={30}
+            />
           ) : (
             <div className="cards">
               {data.map((values) => {
@@ -181,7 +186,7 @@ const HomePage = () => {
                         <strong>Position: </strong>
                         {position}
                       </p>
-                      <a href="/profile" className="main-btn">
+                      <a href="/profile/1" className="main-btn">
                         View Profile
                       </a>
                     </div>
