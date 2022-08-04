@@ -25,7 +25,7 @@ const Profile = () => {
               live, working in the tech industry as a software developer. If you
               are interested to live in Nottingham, I can tell you all about the
               city, life and living hacks. I will tell you about the living
-              costs, where and how to rent, employabiloty in Nottingham,
+              costs, where and how to rent, employability in Nottingham,
               transportation, and studies. Since I also lived in London, I can
               compare the two cities and tell you which one is best for you.
             </p>

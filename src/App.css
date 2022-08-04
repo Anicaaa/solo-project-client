@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-bar {
@@ -13,7 +14,12 @@
 }
 
 .title {
-  color: #2d3065;
+  color: white;
+  background-color: #2d3065;
+  padding: 7px;
+  text-align: center;
+  width: 200px;
+  border-radius: 10px 30px;
 }
 
 .search-form {
@@ -48,6 +54,10 @@
   display: flex;
 }
 
+.filter-section {
+  padding-right: 60px;
+}
+
 .filter-city, .filter-lang, .filter-reason {
   margin-top: 30px;
   display: flex;
@@ -55,8 +65,9 @@
   align-items: flex-start;
 }
 
-h3 {
- margin-bottom: 15px;
+.filter-header {
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .btn {
@@ -70,6 +81,10 @@ h3 {
 }
 
 .btn:hover {
+  font-weight: bold;
+}
+
+.btn:focus {
   font-weight: bold;
 }
 
@@ -104,6 +119,7 @@ h3 {
 .cards {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .card {
@@ -137,7 +153,10 @@ h3 {
   border: none;
   padding: 10px;
   font-size: medium;
+}
 
+.position {
+  margin-top: 15px;
 }
 
 .main-btn:hover, .reset-btn:hover, .book-btn:hover, .submit-btn:hover {

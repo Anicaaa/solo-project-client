@@ -3,7 +3,7 @@ import React from "react";
 const Book = () => {
   return (
     <>
-      <form action="/done.js" className="book-box">
+      <form className="book-box">
         <h1 className="book-title">Book Here</h1>
         <input
           className="input-book-box"
@@ -45,9 +45,9 @@ const Book = () => {
           name="message"
           id="message"
         ></input>
-        <button className="submit-btn" href="/done" type="submit">
+        <a className="submit-btn" href="/done" type="submit">
           Submit
-        </button>
+        </a>
       </form>
     </>
   );

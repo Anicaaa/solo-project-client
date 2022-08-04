@@ -76,7 +76,7 @@ const HomePage = () => {
       <section className="main-page">
         <div className="filter-section">
           <div className="filter-city">
-            <h3>City</h3>
+            <h3 className="filter-header">City</h3>
             <button
               className="btn"
               onClick={() => filterResultCity("Brighton")}
@@ -112,7 +112,7 @@ const HomePage = () => {
             </button>
           </div>
           <div className="filter-lang">
-            <h3>Language</h3>
+            <h3 className="filter-header">Language</h3>
             <button
               className="btn"
               onClick={() => filterResultLanguage("Arabic")}
@@ -145,7 +145,7 @@ const HomePage = () => {
             </button>
           </div>
           <div className="filter-reason">
-            <h3>Reason</h3>
+            <h3 className="filter-header">Reason</h3>
             <button className="btn" onClick={() => filterResultReason("Work")}>
               Work
             </button>
